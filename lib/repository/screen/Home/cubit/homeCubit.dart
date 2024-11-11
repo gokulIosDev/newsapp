@@ -9,10 +9,10 @@ class HomeCubit extends Cubit<HomeStates> {
 
   HomeCubit({required this.apiHelper}):super(HomeInitialStates());
 
-  getData() async {
+  getData({required String query}) async {
     emit(HomeLoadingState());
     try {
-      final responseData = await apiHelper.getApi(url: BaseUrls.home);
+      final responseData = await apiHelper.getApi(query: query);
       print(responseData);
       HomeModel homeModel = HomeModel.fromJson(responseData);
       emit(HomeLoadedState(homeModel: homeModel));

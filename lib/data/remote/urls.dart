@@ -6,5 +6,5 @@ class BaseUrls {
   static const String signIn =
       "https://news-app-eosin-beta.vercel.app/newsapp/signin";
   static const String home =
-      "https://newsapi.org/v2/everything?q=telugu&from=2024-10-10&sortBy=publishedAt&apiKey=11f999fcddb54b70b2dab328a0b8c660";
+      "https://newsapi.org/v2/everything?q=mangalagiri&from=2024-10-10&sortBy=publishedAt&apiKey=11f999fcddb54b70b2dab328a0b8c660";
 }

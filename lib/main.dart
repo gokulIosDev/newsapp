@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         providers: [
           BlocProvider(create: (_) => SignUpBloc(apiHelper: ApiHelper())),
           BlocProvider(create: (_) => SignInBloc(apiHelper: ApiHelper())),
-          BlocProvider(create: (_) => HomeCubit(apiHelper: ApiHelper())..getData()),
+          BlocProvider(create: (_) => HomeCubit(apiHelper: ApiHelper())..getData(query: "guntur")),
         ],
         child: MaterialApp(
             title: 'News App',
